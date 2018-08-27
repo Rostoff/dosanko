@@ -1,0 +1,71 @@
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="ElementOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          {{ partOne }}
+        </a>
+        <p class="right">absence de rôles</p>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="ElementOne">
+      <div class="panel-body">
+        <app-informations></app-informations>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="ElementTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            {{ partTwo }}
+        </a>
+        <p class="right">6 documents disponibles</p>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ElementTwo">
+      <div class="panel-body">
+          <app-forms-models></app-forms-models>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="ElementThree">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            {{ partThree }}
+        </a>
+        <p class="right">2 demande(s) en cours</p>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ElementThree">
+      <div class="panel-body">
+        <app-demands></app-demands>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="ElementFoor">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              {{ partFour }}
+          </a>
+          <p class="right">0 tâche(s) en attente</p>
+        </h4>
+      </div>
+      <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ElementFour">
+        <div class="panel-body">
+          <app-tasks></app-tasks>
+        </div>
+      </div>
+    </div>
+
+
+</div>

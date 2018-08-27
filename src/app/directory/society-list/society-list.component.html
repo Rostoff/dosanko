@@ -1,0 +1,47 @@
+<div class="fluid-container">
+    <div class="row">
+      <div class="col-xs-offset-1 col-xs-10">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="col-xs-12">
+
+            <table class="full-width">
+                <tr>
+                    <th>Nom</th>
+                    <th>Adresse du siège social</th>
+                    <th>RCS</th>
+                    <th>KBIS</th>
+                    <th>Statut</th>
+                    <th>Taille</th>
+                    <th>Adresse de l'établissement principal</th>
+                    <th>Président</th>
+                    <th>Directeur général</th>
+                    <th>Officier de sécurité</th>
+                    <th>Habilitation en cours</th>
+                    <th>Suivi</th>
+                    <th>Commentaire</th>
+                </tr>
+            
+                <tr *ngFor="let society of societys; let even = even;" [ngClass]="{pair: even}">
+                    <td>{{society.name}}</td>
+                    <td>{{society.adress}}</td>
+                    <td>{{society.RCS}}</td>
+                    <td>{{society.KBIS}}</td>
+                    <td>{{society.statut}}</td>
+                    <td>{{society.size}}</td>
+                    <td>{{society.mainAdress}}</td>
+                    <td>{{society.president}}</td>
+                    <td>{{society.generalDirector}}</td>
+                    <td>{{society.securityOfficer}}</td>
+                    <td>{{society.empowerment}}</td>
+                    <td>{{society.followed}}</td>
+                    <td>{{society.comments}}</td>
+                </tr>
+            </table>
+ 
+          </div>
+          </div>
+        </div>
+    </div>
+    </div>
+</div>

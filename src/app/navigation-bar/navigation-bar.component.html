@@ -1,0 +1,16 @@
+<ul class="category nav nav-tabs">
+    <li *ngFor="let category of categorys" 
+    [class.selected]= "category === selectedCategory"
+    (click)="onSelect(category)">
+    <a [routerLink]=category.url><span class="name btn">{{ category.name }}</span></a>
+    </li>
+
+    <li class="right" *ngFor="let categoryRight of categoryBis"
+    [class.selected]= "categoryRight === selectedCategory"
+    (click)="onSelect(categoryRight)">
+      <a [routerLink]=categoryRight.url><span class="name btn">{{ categoryRight.name }}</span></a>
+    </li>
+  </ul>
+
+  <router-outlet></router-outlet>
+
