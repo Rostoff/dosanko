@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-market-search',
@@ -10,11 +10,21 @@ export class MarketSearchComponent implements OnInit {
   addFilter: string;
   sortFilter: string;
   placeholder: string;
+  @Output() beClicked = new EventEmitter<string>();
+  searchText: string;
 
   constructor() {
     this.addFilter = 'Rechercher';
     this.sortFilter = '+Ajouter un marché';
     this.placeholder = 'Rechercher un marché';
+  }
+
+  onClick() {
+    this.beClicked.emit(this.searchText);
+  }
+
+  onEnter() {
+    this.onClick();
   }
 
   ngOnInit() {

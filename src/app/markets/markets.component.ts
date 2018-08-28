@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MarketsComponent implements OnInit {
 
+  search: string;
+
   constructor() {
+  }
+
+  beValidate($event) {
+    this.search = $event;
   }
 
   ngOnInit() {

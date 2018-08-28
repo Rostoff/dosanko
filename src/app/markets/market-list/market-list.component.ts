@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { MarketService } from '../../market.service';
 import { Market } from '../../market.interface';
 
@@ -11,6 +11,7 @@ import { Market } from '../../market.interface';
 export class MarketListComponent implements OnInit {
 
   markets: Market[];
+  @Input() searchProperty: string;
 
   constructor(private MarketService: MarketService) { }
 

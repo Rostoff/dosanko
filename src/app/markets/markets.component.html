@@ -1,2 +1,3 @@
-<app-market-search></app-market-search>
-<app-market-list></app-market-list>
+<app-market-search (beClicked)="beValidate($event)"></app-market-search>
+<!-- <h1>{{ search }}</h1> -->
+<app-market-list [searchProperty]="search"></app-market-list>
