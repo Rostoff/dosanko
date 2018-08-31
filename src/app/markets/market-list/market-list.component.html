@@ -6,6 +6,7 @@
           <div class="col-xs-12">
 
           <table class="full-width">
+              <div>
               <tr>
                   <th>Nom affaire</th>
                   <th>Objet</th>
@@ -21,23 +22,9 @@
                   <th>Fiche de sécurité</th>
                   <th>Annexe de sécurité</th>
                   <th>Date réunion de cadrage</th>
-                  <th>Date lancement consultation</th>
-                  <th>Date RAO</th>
                   <th>Titulaire</th>
-                  <th>Date de notification</th>
-                  <th>Date de début d'exécution</th>
-                  <th>Durée</th>
-                  <th>Date de fin calculée</th>
-                  <th>Montant min</th>
-                  <th>Montant max initial</th>
-                  <th>Montant max calculé</th>
-                  <th>CCTP</th>
-                  <th>CCAP</th>
-                  <th>CCAG</th>
-                  <th>CCP</th>
-                  <th>AE</th>
-                  <th>LDP</th>
-                  <th>Annexe de prix</th>
+                  <th>Date lancement consultation</th>
+                  <th>Voir plus</th>
               </tr>
           
               <tr *ngFor="let market of markets; let even = even;" [ngClass]="{pair: even}">
@@ -55,9 +42,33 @@
                   <td>{{market.securityForm}}</td>
                   <td>{{market.securityAnnexe}}</td>
                   <td>{{market.framMeetingDate}}</td>
-                  <td>{{market.lauchConsultDate}}</td>
-                  <td>{{market.RAOdate}}</td>
                   <td>{{market.holder}}</td>
+                  <td>{{market.lauchConsultDate}}</td>
+                  <td><button type="button" class="btn btn-info" data-toggle="collapse" [attr.data-target]="'#subArray' + market.id">Plus</button></td>
+                </tr>
+                </div>
+                
+                <div class="collapse test" id="subArray1">
+                <tr>
+                  <th>Date RAO</th>
+                  <th>Date de notification</th>
+                  <th>Date de début d'exécution</th>
+                  <th>Durée</th>
+                  <th>Date de fin calculée</th>
+                  <th>Montant min</th>
+                  <th>Montant max initial</th>
+                  <th>Montant max calculé</th>
+                  <th>CCTP</th>
+                  <th>CCAP</th>
+                  <th>CCAG</th>
+                  <th>CCP</th>
+                  <th>AE</th>
+                  <th>LDP</th>
+                  <th>Annexe de prix</th>
+                </tr>
+                
+                <tr *ngFor="let market of markets; let even = even;" [ngClass]="{pair: even}">
+                  <td>{{market.RAOdate}}</td>
                   <td>{{market.notificationDate}}</td>
                   <td>{{market.startDateExe}}</td>
                   <td>{{market.duration}}</td>
@@ -72,7 +83,8 @@
                   <td>{{market.AE}}</td>
                   <td>{{market.LDP}}</td>
                   <td>{{market.annexPrice}}</td>
-              </tr>
+                </tr>
+              </div>
           </table>
 
         </div>

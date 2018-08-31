@@ -8,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class DemandsComponent implements OnInit {
 
   demandButton: string;
+  thematic: string;
 
   constructor() {
     this.demandButton = 'Faire une nouvelle demande';
+    this.thematic = 'Thématique';
   }
 
   ngOnInit() {
