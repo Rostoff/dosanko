@@ -20,3 +20,18 @@ th {
     width: 100%;
     margin: 20px 0px;
 }
+
+
+/*Même largeur pour chaque cellules de tableau*/
+tr {
+    width: 100%;
+    display: table;
+    table-layout: fixed; /* optional, for equal spacing */
+    border-collapse: collapse;
+}
+td, th {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    word-wrap: break-word;
+}

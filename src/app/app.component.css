@@ -1,0 +1,6 @@
+.contour {
+    display: flex;
+    border-radius: 10px;
+    margin: 15px;
+    background-color: white;
+}

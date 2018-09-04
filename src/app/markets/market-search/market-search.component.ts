@@ -16,7 +16,7 @@ export class MarketSearchComponent implements OnInit {
   constructor() {
     this.addFilter = 'Rechercher';
     this.sortFilter = '+Ajouter un marché';
-    this.placeholder = 'Rechercher un marché';
+    this.placeholder = 'Société, Filiale, Nom, Prénom, N° marché, N° Affaire, Nom marché...';
   }
 
   onClick() {

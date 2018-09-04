@@ -1,3 +1,13 @@
 .right{
     float: right;
 }
+
+.center {
+    margin: 20%;
+    text-align: center;
+}
+
+.elementAccueil{
+    padding: 0 20px;
+    border-left: 1px solid black;
+}
