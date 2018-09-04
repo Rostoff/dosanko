@@ -11,3 +11,24 @@
     margin: 0 auto;
     display: block;
 }
+
+#searchComponent input {
+    height: 50px;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 10px 3px lightgrey;
+}
+
+button.col-xs-1.btn.btn-primary.search-button {
+    height: 50px;
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: 0px 0px 10px 3px lightgrey;
+    font-size: 30px;
+}
+
+button.col-xs-1.btn.btn-primary.add-button {
+    height: 50px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 3px lightgrey;
+    font-size: 30px;
+}
