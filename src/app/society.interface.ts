@@ -13,4 +13,5 @@ export interface Society {
     empowerment?: string;
     followed?: string;
     comments?: string;
+    details?: string;
 }

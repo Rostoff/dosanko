@@ -20,6 +20,7 @@
                     <th>Habilitation en cours</th>
                     <th>Suivi</th>
                     <th>Commentaire</th>
+                    <th>Détails</th>
                 </tr>
             
                 <tr *ngFor="let society of societys; let even = even;" [ngClass]="{pair: even}">
@@ -36,6 +37,7 @@
                     <td>{{society.empowerment}}</td>
                     <td>{{society.followed}}</td>
                     <td>{{society.comments}}</td>
+                    <td><a [routerLink]=society.details>Lien</a></td> 
                 </tr>
             </table>
  

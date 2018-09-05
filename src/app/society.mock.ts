@@ -15,7 +15,8 @@ export const SOCIETY: Society[] = [
     securityOfficer: 'Mr Great',
     empowerment: 'non',
     followed: 'OUI',
-    comments: 'Rien à déclarer'
+    comments: 'Rien à déclarer',
+    details: '/societys',
 },
 
 {
