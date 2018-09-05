@@ -18,5 +18,14 @@ th {
 
 .full-width{
     width: 100%;
-    margin: 20px 0px;
+    margin: 0px;
+}
+
+table.full-width {
+    margin-bottom: 20px !important;
+}
+
+td.center {
+    text-align: center;
+    font-size: 20px;
 }

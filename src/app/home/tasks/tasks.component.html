@@ -1,3 +1,8 @@
-<p>
-  tasks works!
-</p>
+<div class="row">
+    <div id="searchComponent" class="col-xs-12">
+        <input [(ngModel)]="searchText" type="text" [placeholder]=placeholder class="col-xs-5" (keyup.enter)="onEnter()">
+      <button (click)="onClick()" class="col-xs-1 btn btn-primary search-button" title="{{ addFilter }}"><i class="fas fa-search"></i></button>
+      <button class="col-xs-offset-4 col-xs-2 btn btn-primary add-button" title="{{ sortFilter }}">Ajouter une tâche</button>
+    </div> 
+    
+</div>

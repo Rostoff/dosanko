@@ -1,0 +1,19 @@
+div#searchComponent input {
+    height: 34px;
+}
+
+#searchComponent {
+    margin-bottom: 15px;
+}
+
+.panel-body {
+    padding: 25px 15px;
+}
+
+button.col-xs-1.btn.btn-primary.search-button {
+    width: 80px;
+}
+
+button.col-xs-offset-4.col-xs-2.btn.btn-primary.add-button {
+    float: right;
+}

@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TasksComponent implements OnInit {
 
-  constructor() { }
+  placeholder: string;
+  constructor() {
+    this.placeholder = 'Rechercher';
+  }
 
   ngOnInit() {
   }

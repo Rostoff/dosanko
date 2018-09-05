@@ -23,11 +23,12 @@ ul li.selected{
 
 .nav-tabs > li > a:hover{
   border: 1px solid transparent;
-  /* background-color: white; */
+  color: black;
 }
 
 .nav-tabs > li.selected > a{
   background-color: white;
+  color: black;
 }
 
 .category.nav.nav-tabs{
@@ -36,5 +37,13 @@ ul li.selected{
 
 .category.nav.nav-tabs {
   border-radius: 5px 5px 0px 0px;
-  background-color: #e1e1e1;
+  background-color: #337ab7;
+}
+
+a {
+  color: white;
+}
+
+.btn {
+  font-size: 16px;
 }
