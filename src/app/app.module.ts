@@ -21,12 +21,24 @@ import { AdminComponent } from './admin/admin.component';
 import { SynthesesComponent } from './syntheses/syntheses.component';
 import { MarketListComponent } from './markets/market-list/market-list.component';
 import { MarketSearchComponent } from './markets/market-search/market-search.component';
+import { DirectoryTypeListComponent } from './directory/directory-type-list/directory-type-list.component';
+import { SocietyListPersonnalComponent } from './directory/society-list-personnal/society-list-personnal.component';
+import { SocietyListMarketComponent } from './directory/society-list-market/society-list-market.component';
+import { SocietySearchComponent } from './societys/society-search/society-search.component';
 
 
 const ROUTES: Routes = [
   {path: '', component: HomeComponent},
   {path: 'home', component: HomeComponent},
-  {path: 'directory', component: DirectoryComponent},
+  { path: 'directory',
+    component: DirectoryComponent,
+    children: [
+      {path: '', component: SocietyListComponent},
+      {path: 'directory-society', component: SocietyListComponent},
+      {path: 'directory-personnal', component: SocietyListPersonnalComponent},
+      {path: 'directory-market', component: SocietyListMarketComponent}
+    ]
+    },
   {path: 'markets', component: MarketsComponent},
   {path: 'societys', component: SocietysComponent},
   {path: 'personal', component: PersonalComponent},
@@ -57,6 +69,10 @@ const ROUTES: Routes = [
     SynthesesComponent,
     MarketListComponent,
     MarketSearchComponent,
+    DirectoryTypeListComponent,
+    SocietyListPersonnalComponent,
+    SocietyListMarketComponent,
+    SocietySearchComponent,
   ],
   imports: [
     BrowserModule, FormsModule, RouterModule.forRoot(ROUTES)

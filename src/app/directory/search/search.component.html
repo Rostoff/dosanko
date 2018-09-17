@@ -7,32 +7,6 @@
               <input [(ngModel)]="searchText" (keyup.enter)="onEnter()" type="text" [placeholder]=placeholder class="col-xs-11">
             <button (click)="onClick()" class="col-xs-1 btn btn-primary search-button" title="{{ addFilter }}"><i class="fas fa-search"></i></button>
           </div> 
-          
-            <!-- <div class="col-xs-4">
-              <button class="btn btn-primary btn-lg">{{ buttonOne }}</button>
-            </div>
-
-            <div class="col-xs-4">
-              <button class="btn btn-primary btn-lg center">{{ buttonTwo }}</button>
-            </div>
-
-            <div class="col-xs-3 col-xs-offset-1">
-              <button class="btn btn-primary btn-lg right">{{ buttonThree }}</button>
-            </div> -->
-
-            <div class="col-xs-12">
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-              <label class="btn btn-secondary active">
-                <input type="radio" name="options" id="option1" autocomplete="off" checked>{{ buttonOne }}
-              </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="option2" autocomplete="off"> {{ buttonTwo }}
-              </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="option3" autocomplete="off"> {{ buttonThree }}
-              </label>
-            </div>
-          </div>
 
         </div>
       </div>

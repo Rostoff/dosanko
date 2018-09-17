@@ -1,0 +1,10 @@
+<div class="col-xs-12">
+  <ul class="nav nav-tabs">
+    <li *ngFor="let categoryList of directoryTypeList"
+    (click)="onSelect(category)">
+    <a [routerLink]=categoryList.url><span class="name btn">{{ categoryList.name }}</span></a>
+  </li>
+  </ul>
+</div>
+
+<router-outlet></router-outlet>

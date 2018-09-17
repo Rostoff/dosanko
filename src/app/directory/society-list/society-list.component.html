@@ -24,7 +24,7 @@
                 </tr>
             
                 <tr *ngFor="let society of societys; let even = even;" [ngClass]="{pair: even}">
-                    <td>{{society.name}}</td>
+                    <td (click)="onSelect(societyName)">{{society.name}}</td>
                     <td>{{society.adress}}</td>
                     <td>{{society.RCS}}</td>
                     <td>{{society.KBIS}}</td>

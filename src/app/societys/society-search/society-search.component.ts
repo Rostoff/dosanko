@@ -2,19 +2,22 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { Category } from '../../navigation-category-type';
 
 @Component({
-  selector: 'app-search',
-  templateUrl: './search.component.html',
-  styleUrls: ['./search.component.css']
+  selector: 'app-society-search',
+  templateUrl: './society-search.component.html',
+  styleUrls: ['./society-search.component.css']
 })
-export class SearchComponent implements OnInit {
-
+export class SocietySearchComponent implements OnInit {
   placeholder: string;
+  addFilter: string;
+  sortFilter: string;
   searchText: string;
   selectedCategory: Category;
   @Output() beClicked = new EventEmitter<string>();
 
   constructor() {
-    this.placeholder = 'Société, Filiale, Nom, Prénom, N° marché, N° Affaire, Nom marché...';
+    this.placeholder = 'Rechercher une société';
+    this.addFilter = 'Rechercher';
+    this.sortFilter = '+Ajouter un marché';
   }
 
   onClick(): void {

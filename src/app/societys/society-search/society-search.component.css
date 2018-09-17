@@ -1,0 +1,32 @@
+#searchComponent.col-xs-12{
+    margin: 20px 0;
+}
+
+.right{
+    float: right;
+}
+
+.center{
+    margin: 0 auto;
+    margin: 0 auto;
+    display: block;
+}
+
+#searchComponent input {
+    height: 34px;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid lightgray;
+}
+
+button.col-xs-1.btn.btn-primary.search-button {
+    height: 34px;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 20px;
+}
+
+button.col-xs-1.btn.btn-primary.add-button {
+    height: 34px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 3px lightgrey;
+    font-size: 20px;
+}
