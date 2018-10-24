@@ -1,2 +1,4 @@
 <app-society-search (beClicked)="onValidate($event)"></app-society-search>
-<app-society-list [searchProperty]="search"></app-society-list>
+<app-society-list (click)="onDetails(validate)" [validate]="validate" [searchProperty]="search"></app-society-list>
+
+

@@ -22,7 +22,7 @@ export const SOCIETY: Society[] = [
 {
     id : 2,
     name : 'Beta',
-    adress: '1, rue du stylo',
+    adress: '2, rue du stylo',
     RCS: '75001 Paris',
     KBIS: '',
     statut: '',
@@ -38,7 +38,7 @@ export const SOCIETY: Society[] = [
 {
     id : 3,
     name : 'Delta',
-    adress: '1, rue du stylo',
+    adress: '3, rue du stylo',
     RCS: '75001 Paris',
     KBIS: '',
     statut: '',
@@ -54,7 +54,7 @@ export const SOCIETY: Society[] = [
 {
     id : 4,
     name : 'Epsylon',
-    adress: '1, rue du stylo',
+    adress: '4, rue du stylo',
     RCS: '75001 Paris',
     KBIS: '',
     statut: '',

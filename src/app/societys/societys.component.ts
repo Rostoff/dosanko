@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class SocietysComponent implements OnInit {
 
   search: string;
+  validate: boolean;
 
   constructor() { }
 
@@ -15,7 +16,14 @@ export class SocietysComponent implements OnInit {
     this.search = $event;
   }
 
+  onDetails() {
+    this.validate = true;
+    console.log(this.validate);
+  }
+
+
   ngOnInit() {
+    this.validate = false;
   }
 
 }

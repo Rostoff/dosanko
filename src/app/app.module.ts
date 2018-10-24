@@ -25,6 +25,7 @@ import { DirectoryTypeListComponent } from './directory/directory-type-list/dire
 import { SocietyListPersonnalComponent } from './directory/society-list-personnal/society-list-personnal.component';
 import { SocietyListMarketComponent } from './directory/society-list-market/society-list-market.component';
 import { SocietySearchComponent } from './societys/society-search/society-search.component';
+import { SocietyListDetailsComponent } from './societys/society-list-details/society-list-details.component';
 
 
 const ROUTES: Routes = [
@@ -73,6 +74,7 @@ const ROUTES: Routes = [
     SocietyListPersonnalComponent,
     SocietyListMarketComponent,
     SocietySearchComponent,
+    SocietyListDetailsComponent,
   ],
   imports: [
     BrowserModule, FormsModule, RouterModule.forRoot(ROUTES)

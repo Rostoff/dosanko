@@ -22,6 +22,7 @@ export class SocietySearchComponent implements OnInit {
 
   onClick(): void {
     this.beClicked.emit(this.searchText);
+    console.log(this.searchText);
   }
 
   onEnter() {
