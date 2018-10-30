@@ -1,3 +1,48 @@
-<p>
-  admin works!
-</p>
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+
+  <div class="panel panel-default">
+      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+    <div class="panel-heading" role="tab" id="ElementOne">
+      <h4 class="panel-title">
+        
+          {{ partOne }}
+        
+        <!-- <p class="right"></p> -->
+      </h4>
+    </div>
+  </a>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="ElementOne">
+      <div class="panel-body">
+          <p>Component ici</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+<app-personal-search></app-personal-search>
+<app-personal-list></app-personal-list>
+
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+  <div class="panel-heading" role="tab" id="ElementTwo">
+    <h4 class="panel-title">
+      
+        {{ partTwo }}
+      
+      <!-- <p class="right"></p> -->
+    </h4>
+  </div>
+  </a>
+  <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="ElementTwo">
+    <div class="panel-body">
+        <p>Component ici</p>
+    </div>
+  </div>
+  </div>
+
+</div>

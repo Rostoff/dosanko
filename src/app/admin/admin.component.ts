@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminComponent implements OnInit {
 
-  constructor() { }
+  partOne: string;
+  partTwo: string;
+
+  constructor() {
+    this.partOne = 'Gestion des accès';
+    this.partTwo = 'Gestion des modèles et formulaires';
+  }
 
   ngOnInit() {
   }
