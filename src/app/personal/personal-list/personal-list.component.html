@@ -1,0 +1,39 @@
+<div class="fluid-container">
+  <div class="row">
+    <div class="col-xs-12">
+     
+
+          <table class="full-width">
+              <tr>
+                  <th>Nom</th>
+                  <th>Prénom</th>
+                  <th>Date de naissance</th>
+                  <th>Lieu de naissance</th>
+                  <th>Id Société</th>
+                  <th>Fonction</th>
+                  <th>Numéro professionel</th>
+                  <th>Mail</th>
+                  <th>Commentaire</th>
+                  <th>Suivi</th>
+              </tr>
+          
+              <tr *ngFor="let personal of personals; let even = even;" [ngClass]="{pair: even}">
+                  <td class="cursor" (click)="onSelect(personal)">{{personal.firstName}}</td>
+                  <td>{{personal.lastName}}</td>
+                  <td>{{personal.birthday}}</td>
+                  <td>{{personal.birthplace}}</td>
+                  <td>{{personal.idSociety}}</td>
+                  <td>{{personal.function}}</td>
+                  <td>{{personal.professionnalNumber}}</td>
+                  <td>{{personal.mail}}</td>
+                  <td>{{personal.comments}}</td>
+                  <td>{{personal.follow}}</td>
+              </tr>
+          </table>
+
+          
+
+        </div>
+        </div>
+
+</div>

@@ -7,7 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersonalComponent implements OnInit {
 
-  constructor() { }
+  partOne: string;
+  partTwo: string;
+  partThree: string;
+  partFour: string;
+
+  constructor() {
+    this.partOne = 'Informations Générales';
+    this.partTwo = 'Habilitation';
+    this.partThree = 'Document';
+    this.partFour = 'Historique';
+   }
 
   ngOnInit() {
   }

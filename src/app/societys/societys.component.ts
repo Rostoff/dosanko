@@ -9,8 +9,17 @@ export class SocietysComponent implements OnInit {
 
   search: string;
   validate: boolean;
+  partOne: string;
+  partTwo: string;
+  partThree: string;
+  partFour: string;
 
-  constructor() { }
+  constructor() {
+    this.partOne = 'Informations Générales';
+    this.partTwo = 'Habilitation';
+    this.partThree = 'Document';
+    this.partFour = 'Historique';
+  }
 
   onValidate($event) {
     this.search = $event;

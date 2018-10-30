@@ -26,6 +26,12 @@ import { SocietyListPersonnalComponent } from './directory/society-list-personna
 import { SocietyListMarketComponent } from './directory/society-list-market/society-list-market.component';
 import { SocietySearchComponent } from './societys/society-search/society-search.component';
 import { SocietyListDetailsComponent } from './societys/society-list-details/society-list-details.component';
+import { GeneralInformationsComponent } from './societys/general-informations/general-informations.component';
+import { HabilitationComponent } from './societys/habilitation/habilitation.component';
+import { DocumentComponent } from './societys/document/document.component';
+import { HistoricComponent } from './societys/historic/historic.component';
+import { PersonalListComponent } from './personal/personal-list/personal-list.component';
+import { PersonalSearchComponent } from './personal/personal-search/personal-search.component';
 
 
 const ROUTES: Routes = [
@@ -75,6 +81,12 @@ const ROUTES: Routes = [
     SocietyListMarketComponent,
     SocietySearchComponent,
     SocietyListDetailsComponent,
+    GeneralInformationsComponent,
+    HabilitationComponent,
+    DocumentComponent,
+    HistoricComponent,
+    PersonalListComponent,
+    PersonalSearchComponent,
   ],
   imports: [
     BrowserModule, FormsModule, RouterModule.forRoot(ROUTES)

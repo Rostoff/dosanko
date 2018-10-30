@@ -1,3 +1,85 @@
-<p>
-  personal works!
-</p>
+<app-personal-search></app-personal-search>
+<app-personal-list></app-personal-list>
+
+
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+
+    <div class="panel panel-default">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <div class="panel-heading" role="tab" id="ElementOne">
+        <h4 class="panel-title">
+          
+            {{ partOne }}
+          
+          <!-- <p class="right"></p> -->
+        </h4>
+      </div>
+    </a>
+      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="ElementOne">
+        <div class="panel-body">
+            <app-general-informations></app-general-informations>
+        </div>
+      </div>
+    </div>
+  
+  
+    <div class="panel panel-default">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+      <div class="panel-heading" role="tab" id="ElementTwo">
+        <h4 class="panel-title">
+  
+              {{ partTwo }} 
+              
+  
+          <!-- <p class="right"></p> -->
+        </h4>
+      </div>
+    </a>
+      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ElementTwo">
+        <div class="panel-body">
+            <app-habilitation></app-habilitation>
+        </div>
+      </div>
+    </div>
+  
+  
+    <div class="panel panel-default">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+      <div class="panel-heading" role="tab" id="ElementThree">
+        <h4 class="panel-title">  
+  
+              {{ partThree }}     
+  
+          <!-- <p class="right"></p> -->
+        </h4>
+      </div>
+    </a>
+      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ElementThree">
+        <div class="panel-body">
+            <app-document></app-document>
+        </div>
+      </div>
+    </div>
+  
+    <div class="panel panel-default">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        <div class="panel-heading" role="tab" id="ElementFoor">
+          <h4 class="panel-title"> 
+  
+                {{ partFour }}
+  
+            <!-- <p class="right"></p> -->
+          </h4>
+        </div>
+      </a>
+        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ElementFour">
+          <div class="panel-body">
+            <app-historic></app-historic>
+          </div>
+        </div>
+      </div>
+  
+  
+  </div>
+  
